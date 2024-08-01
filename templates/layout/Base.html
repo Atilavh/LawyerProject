@@ -1,0 +1,25 @@
+{% load render_partial %}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">wwwwwwwwwwwwwww
+    <title>وکیل داد | صفحه اصلی</title>
+    <link rel="shortcut icon" href="{% static 'images/faw2.png' %}" type="image/png">
+    <link rel="stylesheet" href="{% static 'style/reset.css' %}"> #reset
+    <link rel="stylesheet" href="{% static 'style/grid.css' %}"> #grid
+    <link rel="stylesheet" href="{% static 'style/style.css' %}"> #style
+    <link rel="stylesheet" href="{% static 'style/responsive.css' %}"> #responsive
+</head>
+<body>
+{% include 'Includes/svg.html' %}
+{% render_partial 'Home.views.header_render_partial' %}
+{% include 'Shared/Index.html' %}
+{% render_partial 'Home.views.footer_render_partial' %}
+<script src="{% static 'js/stateAndCityLoader.js' %}" defer></script>
+<script src="{% static 'js/skillPickLoader.js' %}" defer></script>
+<script src="{% static 'js/app.js' %}" defer></script>
+</body>
+</html>
