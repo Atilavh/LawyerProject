@@ -7,6 +7,7 @@ from django.db import models
 class User(AbstractBaseUser):
     FullName = models.CharField(max_length=100, verbose_name='نام و نام خانوادگی')
     PhoneNumber = models.CharField(max_length=11, unique=True, verbose_name='شماره تماس')
+    is_active = models.BooleanField(verbose_name='تایید شده/ نشده', default=False)
 
     class Meta:
         verbose_name = 'موکل'
