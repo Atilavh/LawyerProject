@@ -1,11 +1,5 @@
-{% extends 'layout/Base.html' %}
+{% load static %}
 
-
-{% block title %}
-
-{% endblock %}
-
-{% block content %}
 <main class="main">
     <section class="main-head">
         <div class="container">
@@ -13,7 +7,8 @@
                 <div class="col-12 col-md-6 col-lg-5">
                     <div class="main-head__details">
                         <h1 class="main-head__title">وکیل داد, مرجع تخصصی وکیل یابی</h1>
-                        <h2 class="main-head__caption">با سایت وکیل داد به آسانی خدمات قضایی دریافت کنید و با وکلای مجرب
+                        <h2 class="main-head__caption">با سایت وکیل داد به آسانی خدمات قضایی دریافت کنید و با وکلای
+                            مجرب
                             و متخصص ما ارتباط داشته باشید</h2>
                         <a href="#services" class="main-head__btn">پیدا کردن وکیل</a>
                         <div class="fade-circle main-head__circle"></div>
@@ -21,7 +16,7 @@
                 </div>
 
                 <div class="col-8 col-md-6 col-lg-6">
-                    <img src="images/judgeicons/1.png" alt="" class="main-head__img">
+                    <img src="{% static 'images/judgeicons/1.png' %}" alt="" class="main-head__img">
                 </div>
             </div>
         </div>
@@ -293,7 +288,7 @@
                         </div>
                         <span class="Counseling-box__text">من کارمند قراردادی دانشگاه هستم.دانشگاه آزمون استخدامی پیمانی برگزار کرد و من در این آزمون قبول شدم .آیا دانشگاه می‌تواند سوابق پایه و رتبه مرا صفر کند</span>
                         <div class="Counseling-box__see-answer">
-                            <img src="images/defaultProfile.png" alt="" class="Counseling-box__see-answer-image">
+                            <img src="{% static 'images/defaultProfile.png' %}" alt="" class="Counseling-box__see-answer-image">
                             <span class="Counseling-box__see-answer-text">مشاهده جواب</span>
                             <svg class="Counseling-box__see-answer-icon" style="width: 18px; height: 18px;">
                                 <use href="#arrow-left-icon"></use>
@@ -308,7 +303,7 @@
                         </div>
                         <span class="Counseling-box__text">من کارمند قراردادی دانشگاه هستم.دانشگاه آزمون استخدامی پیمانی برگزار کرد و من در این آزمون قبول شدم .آیا دانشگاه می‌تواند سوابق پایه و رتبه مرا صفر کند</span>
                         <div class="Counseling-box__see-answer">
-                            <img src="images/defaultProfile.png" alt="" class="Counseling-box__see-answer-image">
+                            <img src="{% static 'images/defaultProfile.png' %}" alt="" class="Counseling-box__see-answer-image">
                             <span class="Counseling-box__see-answer-text">مشاهده جواب</span>
                             <svg class="Counseling-box__see-answer-icon" style="width: 18px; height: 18px;">
                                 <use href="#arrow-left-icon"></use>
@@ -323,7 +318,7 @@
                         </div>
                         <span class="Counseling-box__text">من کارمند قراردادی دانشگاه هستم.دانشگاه آزمون استخدامی پیمانی برگزار کرد و من در این آزمون قبول شدم .آیا دانشگاه می‌تواند سوابق پایه و رتبه مرا صفر کند</span>
                         <div class="Counseling-box__see-answer">
-                            <img src="images/defaultProfile.png" alt="" class="Counseling-box__see-answer-image">
+                            <img src="{% static 'images/defaultProfile.png' %}" alt="" class="Counseling-box__see-answer-image">
                             <span class="Counseling-box__see-answer-text">مشاهده جواب</span>
                             <svg class="Counseling-box__see-answer-icon" style="width: 18px; height: 18px;">
                                 <use href="#arrow-left-icon"></use>
@@ -338,7 +333,7 @@
                         </div>
                         <span class="Counseling-box__text">من کارمند قراردادی دانشگاه هستم.دانشگاه آزمون استخدامی پیمانی برگزار کرد و من در این آزمون قبول شدم .آیا دانشگاه می‌تواند سوابق پایه و رتبه مرا صفر کند</span>
                         <div class="Counseling-box__see-answer">
-                            <img src="images/defaultProfile.png" alt="" class="Counseling-box__see-answer-image">
+                            <img src="{% static 'images/defaultProfile.png' %}" alt="" class="Counseling-box__see-answer-image">
                             <span class="Counseling-box__see-answer-text">مشاهده جواب</span>
                             <svg class="Counseling-box__see-answer-icon" style="width: 18px; height: 18px;">
                                 <use href="#arrow-left-icon"></use>
@@ -353,7 +348,7 @@
                         </div>
                         <span class="Counseling-box__text">من کارمند قراردادی دانشگاه هستم.دانشگاه آزمون استخدامی پیمانی برگزار کرد و من در این آزمون قبول شدم .آیا دانشگاه می‌تواند سوابق پایه و رتبه مرا صفر کند</span>
                         <div class="Counseling-box__see-answer">
-                            <img src="images/defaultProfile.png" alt="" class="Counseling-box__see-answer-image">
+                            <img src="{% static 'images/defaultProfile.png' %}" alt="" class="Counseling-box__see-answer-image">
                             <span class="Counseling-box__see-answer-text">مشاهده جواب</span>
                             <svg class="Counseling-box__see-answer-icon" style="width: 18px; height: 18px;">
                                 <use href="#arrow-left-icon"></use>
@@ -371,30 +366,39 @@
         <div class="container">
             <div class="description-box">
                 <h2 class="description-box__title">چرا وکیل داد؟</h2>
-                <p class="description-box__caption"> انتخاب وکیل مطمن شاید برای بعضی از افراد کار <span class="white">دشوار</span>
-                    با حتی غیر ممکن به نظر برسد و رو به سایت های وکیل یابی برای انجام این کار آورده باشند ولی پیدا کردن
+                <p class="description-box__caption"> انتخاب وکیل مطمن شاید برای بعضی از افراد کار <span
+                        class="white">دشوار</span>
+                    با حتی غیر ممکن به نظر برسد و رو به سایت های وکیل یابی برای انجام این کار آورده باشند ولی پیدا
+                    کردن
                     سایت حرفه ای و ایمن برای سپردن وکیل یابی خود نیز دشوار است;</p>
                 <p class="description-box__caption"><span class="white">“ولی”</span></p>
                 <p class="description-box__caption"> سایت <span class="white">وکیل داد</span> یکی از سایت های <span
-                        class="white">ایمن</span> , <span class="white">حرفه ای</span> و با تجربه ای است که کاربران عزیز
+                        class="white">ایمن</span> , <span class="white">حرفه ای</span> و با تجربه ای است که کاربران
+                    عزیز
                     میتوانند به راحتی و با <span class="white">اطمینان</span> به حل کردن مشکلات خود بپردازند.</p>
-                <p class="description-box__caption">وکلای مجرب و پرتجربه این سایت میتوانند به شما <span class="white">کاربران عزیز</span>
-                    از هر گوشه کشور مشاوره اراّيه دهند تا شما عزیزان بتوانید وکیل مورد نظر خود را با توجه به شرایط خود و
+                <p class="description-box__caption">وکلای مجرب و پرتجربه این سایت میتوانند به شما <span
+                        class="white">کاربران عزیز</span>
+                    از هر گوشه کشور مشاوره اراّيه دهند تا شما عزیزان بتوانید وکیل مورد نظر خود را با توجه به شرایط
+                    خود و
                     وکیل محترم انتخاب کنید.</p>
             </div>
             <div class="description-box">
                 <h2 class="description-box__title">سوابق وکلا</h2>
-                <p class="description-box__caption">پیدا کردن <span class="white">وکیل مناسب</span> و مورد اظمینان یکی
+                <p class="description-box__caption">پیدا کردن <span class="white">وکیل مناسب</span> و مورد اظمینان
+                    یکی
                     از دغدغه های افرادی هستند که مسایل اداری یا شخصی و خانوادگی برای حل کردن به آن نیاز دارند.</p>
                 <p class="description-box__caption">گاهی اوقات افراد برای پیدا کردن این وکلا <span
                         class="white">وقت</span> , <span class="white">علم</span> و <span class="white">تجربه</span>
-                    کافی ندارند و یک همراه و <span class="white">راهنما</span> نیاز دارند تا به وکیل مورد نظر خود دست
+                    کافی ندارند و یک همراه و <span class="white">راهنما</span> نیاز دارند تا به وکیل مورد نظر خود
+                    دست
                     یابند.</p>
-                <p class="description-box__caption"><span class="white">بهترین گرینه</span> برای این افراد میتواند <span
-                        class="white">وکیل داد</span> باشد تا شما عزیزان را در این راه با وکلای درجه یک و مطمن برای
+                <p class="description-box__caption"><span class="white">بهترین گرینه</span> برای این افراد میتواند
+                    <span
+                            class="white">وکیل داد</span> باشد تا شما عزیزان را در این راه با وکلای درجه یک و مطمن
+                    برای
                     <span class="white">نتیجه های بهتر</span> یاری کنند.</p>
             </div>
         </div>
     </section>
 </main>
-{% endblock %}
+

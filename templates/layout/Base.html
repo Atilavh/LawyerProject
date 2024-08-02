@@ -1,25 +1,26 @@
-{% load render_partial %}
 {% load static %}
+{% load render_partial %}
 
 <!DOCTYPE html>
-<html lang="fa" dir="rtl">
+<html lang="fa" dir="{% block html %}rtl{% endblock %}">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">wwwwwwwwwwwwwww
-    <title>وکیل داد | صفحه اصلی</title>
-    <link rel="shortcut icon" href="{% static 'images/faw2.png' %}" type="image/png">
-    <link rel="stylesheet" href="{% static 'style/reset.css' %}"> #reset
-    <link rel="stylesheet" href="{% static 'style/grid.css' %}"> #grid
-    <link rel="stylesheet" href="{% static 'style/style.css' %}"> #style
-    <link rel="stylesheet" href="{% static 'style/responsive.css' %}"> #responsive
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %} وکیل داد | صفحه اصلی {% endblock %}</title>
+    {% block head %}
+        <link rel="shortcut icon" href="{% static 'images/faw2.png' %}" type="image/png">
+        {% include 'Includes/header_references.html' %}
+    {% endblock %}
 </head>
 <body>
-{% include 'Includes/svg.html' %}
-{% render_partial 'Home.views.header_render_partial' %}
-{% include 'Shared/Index.html' %}
-{% render_partial 'Home.views.footer_render_partial' %}
-<script src="{% static 'js/stateAndCityLoader.js' %}" defer></script>
-<script src="{% static 'js/skillPickLoader.js' %}" defer></script>
-<script src="{% static 'js/app.js' %}" defer></script>
+{% block content %}
+    {% include 'Includes/svg.html' %}
+    {% render_partial 'Home.views.header_partial' %}
+    {% include 'Includes/Main(section).html' %}
+    {% render_partial 'Home.views.footer_partial' %}
+    <script src="{% static 'js/app.js' %}"></script>
+    <script src="{% static 'js/stateAndCityLoader.js' %}"></script>
+    <script src="{% static 'js/skillPickLoader.js' %}"></script>
+{% endblock %}
 </body>
 </html>
