@@ -6,10 +6,6 @@ from AccountModule.forms import UserRegisterForm
 
 # Create your views here.
 
-def LoginPage(request):
-    return render(request, 'Accounts/LoginPage.html')
-
-
 def UserRegister(request):
     user_register = UserRegisterForm(request.POST)
     if user_register.is_valid():
