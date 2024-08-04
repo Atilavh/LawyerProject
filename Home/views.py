@@ -12,7 +12,7 @@ def index(request):
     return render(request, 'layout/Base.html')
 
 
-def LoginPage(request):
+def login_page(request):
     return render(request, 'Accounts/LoginPage.html')
 
 
